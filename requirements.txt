@@ -1,8 +1,4 @@
-############### SISTEMA DE TESIS - RAG + SECUENCIAS ################
-# Requerimientos para Fase 1, Fase 2 y Fase 3
-###################################################################
-
-########## EXTRAER DATOS (Reddit, Twitter si lo agregas) ##########
+########## EXTRAER DATOS ##########
 praw
 
 ################ NLP CLÁSICO ################
@@ -10,6 +6,7 @@ spacy
 nltk
 textstat
 vaderSentiment
+nltk 
 
 # Descargar modelo en_core_web_sm (se hace aparte con: python -m spacy download en_core_web_sm)
 
@@ -33,10 +30,6 @@ seaborn
 ################ UTILIDADES ########################
 tqdm
 requests
+beautifulsoup4 
+lxml
 
-###################################################################
-# Este requirements.txt cubre todas las dependencias del pipeline:
-# - Fase 1: Extracción + Preprocesamiento
-# - Fase 2: Caracterización (lexical, sentimiento, BERT)
-# - Fase 3: Modelado secuencial (LSTM) + Baselines
-###################################################################
