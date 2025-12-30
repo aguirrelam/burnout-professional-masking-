@@ -26,8 +26,14 @@ Located in `src/reddit/`. Implements the Deep Learning approach for early detect
 - `04_evaluation_shap.py`: Evaluates performance (F1-Score, AUC-ROC) and generates SHAP interpretability plots to visualize the "Somatic Digital" markers.
 
 ### 2. The "Frontstage" Pipeline (Stack Overflow)
-Located in `src/stackoverflow/`. Implements the statistical baseline.
-- `01_xml_processing.py`: Processes the massive Stack Exchange XML Data Dump to identify burnout cohorts based on abrupt activity cessation and "reputation" filtering.
+Located in `src/stackoverflow/`. Implements the statistical baseline and topic modeling analysis.
+
+- `00_diagnose_dates.py`: Utility to verify the temporal coverage of the XML Data Dump.
+- `01_cohort_extraction.py`: Processes the raw Stack Exchange XML dump to identify "Burnout" (abrupt cessation) vs. "Control" (active) cohorts based on reputation filters (>1000).
+- `02_cleaning_sampling.py`: Performs deep cleaning (removing HTML tags and code blocks) and stratified sampling (50k per class) to create a balanced dataset.
+- `03_feature_engineering.py`: Extracts psycholinguistic features including Sentiment Polarity (TextBlob) and structural complexity metrics (word count, average word length).
+- `04_logistic_baseline.py`: Trains the Logistic Regression baseline using TF-IDF vectors and calculates performance metrics (Accuracy, AUC-ROC).
+- `05_topic_modeling_lda.py`: Applies Latent Dirichlet Allocation (LDA) to ensure burnout risk is homogeneous across different technical domains (e.g., Web vs. Data Science).
 
 ## 🚀 Usage
 
