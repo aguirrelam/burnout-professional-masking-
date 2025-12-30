@@ -1,0 +1,17 @@
+# Ignorar datos pesados
+*.csv
+*.json
+*.xml
+*.jsonl
+*.txt
+
+# Ignorar modelos entrenados
+*.keras
+*.h5
+*.pt
+
+# Ignorar archivos de sistema y entornos virtuales
+__pycache__/
+venv/
+.env
+.DS_Store
