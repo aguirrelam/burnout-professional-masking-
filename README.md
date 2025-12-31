@@ -48,3 +48,16 @@ Located in `src/stackoverflow/`. Implements the statistical baseline and topic m
    ```bash
    git clone [https://github.com/aguirrelam/burnout-professional-masking.git](https://github.com/aguirrelam/burnout-professional-masking.git)
    cd burnout-professional-masking
+   
+## 📊 Data Availability
+
+To ensure reproducibility and transparency, the datasets and trained models used in this study are hosted on Zenodo.
+
+- **Datasets & Models**: *(DOI: 10.5281/zenodo.18099992)*
+
+This includes:
+1. **Reddit Snapshot**: The static dataset used to train the LSTM model (N=1,200).
+2. **Stack Overflow Cohorts**: The processed parquet files for the "Frontstage" analysis (N=100,000).
+3. **Trained Models**: The final `.keras` model weights.
+
+> **Note:** Due to privacy regulations and platform terms of service, raw data containing PII has been anonymized.
