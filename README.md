@@ -46,5 +46,5 @@ Located in `src/stackoverflow/`. Implements the statistical baseline and topic m
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/burnout-professional-masking.git](https://github.com/YOUR_USERNAME/burnout-professional-masking.git)
+   git clone [https://github.com/aguirrelam/burnout-professional-masking.git](https://github.com/aguirrelam/burnout-professional-masking.git)
    cd burnout-professional-masking
