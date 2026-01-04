@@ -35,6 +35,7 @@ Located in `src/stackoverflow/`. Implements the statistical baseline and topic m
 - `04_logistic_baseline.py`: Trains the Logistic Regression baseline using TF-IDF vectors and calculates performance metrics (Accuracy, AUC-ROC).
 - `05_topic_modeling_lda.py`: Applies Latent Dirichlet Allocation (LDA) to ensure burnout risk is homogeneous across different technical domains (e.g., Web vs. Data Science).
 - `06_lstm_bert_experiment`: This script implements a **Deep Learning Counter-Validation** experiment on the Stack Overflow ("Frontstage") dataset. It replicates the high-capacity architecture used for the Reddit dataset (BERT Embeddings + LSTM) but applies it to the technical/professional corpus.
+- `07_validation_proxy.py`: To empirically validate the reliability of using "Abrupt Cessation + High Reputation" as a proxy for burnout, distinguishing it from benign attrition (casual churn)..
 
 ## 🚀 Usage
 
