@@ -1,35 +1,32 @@
-########## EXTRAER DATOS ##########
-praw
-
-################ NLP CLÁSICO ################
+# Data Manipulation & Math
 spacy
 nltk
 textstat
 vaderSentiment
-nltk 
 
-# Descargar modelo en_core_web_sm (se hace aparte con: python -m spacy download en_core_web_sm)
+# Download model en_core_web_sm (python -m spacy download en_core_web_sm)
 
-################ NLP AVANZADO (BERT) ###########
-transformers
-torch
-sentencepiece
+# XML & Text Processing
+beautifulsoup4 
+lxml
+textblob
 
-################ MODELADO Y REDES NEURONALES #######
-tensorflow
-
-################ MANEJO DE DATOS ###################
+# Machine Learning & NLP
 pandas
 numpy
 scikit-learn
+transformers
+torch
+sentencepiece
+tensorflow
 
-################ VISUALIZACIÓN #####################
+# Data Visualization
 matplotlib
 seaborn
 
-################ UTILIDADES ########################
+# Utilities & File Formats
 tqdm
 requests
-beautifulsoup4 
-lxml
+pyarrow
+praw
 
